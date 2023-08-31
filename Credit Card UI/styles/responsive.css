@@ -1,0 +1,27 @@
+@media screen and (max-width: 480px) {
+    .container {
+      width: 25em;
+      margin: 0.2em;
+    }
+    .container .card {
+      padding: 1em;
+    }
+    .card .header h1 {
+      font-size: 1rem;
+    }
+    .card .header .master-img {
+      height: 8em;
+    }
+    .card .card-num {
+      margin: 1em 0 1em 0;
+    }
+    .card .card-num .row-num #num {
+      font-size: 1.4rem;
+    }
+    .card .card-info .row-info:nth-child(2) {
+      margin: 0 8.5em 0 1em;
+    }
+    label {
+      font-size: 0.7rem;
+    }
+  }

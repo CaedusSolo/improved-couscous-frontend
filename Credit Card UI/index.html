@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Credit Card</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="header">
+          <h1>Credit Card</h1>
+          <img
+            src="./media/mastercard.svg"
+            alt="master-img"
+            class="master-img"
+          />
+        </div>
+        <div class="card-num">
+          <label for="num">Card Number</label>
+          <div class="row-num">
+            <input type="text" id="num" maxlength="4" placeholder="1234" />
+            <span>-</span>
+            <input type="text" id="num" maxlength="4" placeholder="1234" />
+            <span>-</span>
+            <input type="text" id="num" maxlength="4" placeholder="1234" />
+            <span>-</span>
+            <input type="text" id="num" maxlength="4" placeholder="1234" />
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="row-info">
+            <label for="month">Month</label>
+            <input type="text" id="month" placeholder="june" />
+          </div>
+          <div class="row-info">
+            <label for="year">Year</label>
+            <input type="number" id="year" placeholder="2023" />
+          </div>
+          <div class="row-info">
+            <label for="cvv">CVV</label>
+            <input type="number" id="cvv" placeholder="456" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
