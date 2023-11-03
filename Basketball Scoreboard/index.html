@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:wght@500&family=Charis+SIL&family=Creepster&family=Hind:wght@600&family=Inter:wght@400;600&family=Orbitron:wght@600;800&family=Poppins:wght@500;600&family=Roboto+Mono:wght@500&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:wght@500&family=Charis+SIL&family=Creepster&family=Hind:wght@600&family=Inter:wght@400;600&family=Orbitron:wght@600;800&family=Oxanium:wght@600&family=Poppins:wght@500;600&family=Roboto+Mono:wght@500&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Basketball Scoreboard</title>
+  </head>
+  <body>
+    <div id="title">
+      <h1>
+        <span class="roboto-mono"> TEAM SCRIMMAGE: STARTERS VS BENCH</span>
+      </h1>
+    </div>
+    <div id="scoreboards-container">
+      <div class="scoreboard starters-scoreboard">
+        <h2 class="score-title">STARTERS</h2>
+        <div class="score-container">
+          <h2 class="score" id="starters-score">PRESS START</h2>
+        </div>
+        <div class="btns-container">
+          <button class="btn" id="starters-add-one-btn" onclick="startersAddOne()">+1</button>
+          <button class="btn" id="starters-add-two-btn" onclick="startersAddTwo()">+2</button>
+          <button class="btn" id="starters-add-three-btn" onclick="startersAddThree()">+3</button>
+        </div>
+      </div>
+      <div class="scoreboard bench-scoreboard">
+        <h2 class="score-title">BENCH</h2>
+        <div class="score-container">
+          <h2 class="score" id="bench-score">PRESS START</h2>
+        </div>
+        <div class="btns-container">
+          <button class="btn" id="bench-add-one-btn" onclick="benchAddOne()">+1</button>
+          <button class="btn" id="bench-add-two-btn" onclick="benchAddTwo()">+2</button>
+          <button class="btn" id="bench-add-three-btn" onclick="benchAddThree()">+3</button>
+        </div>
+      </div>
+    </div>
+    <div id="start-end-btn-container">
+      <button id="start-btn" onclick="initializeGame()">START GAME</button>
+      <button id="end-btn" onclick="determineWinner()">END GAME</button>
+      <button id="new-btn" onclick="newGame()">NEW GAME</button>
+    </div>
+    <h1 id="winner-banner"></h1>
+  </body>
+</html>

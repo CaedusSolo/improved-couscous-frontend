@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background: url("./img/background.jpg") no-repeat center center/ cover; */
+  height: 100vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
+    url("./img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1em;
+}
+
+.roboto-mono {
+  font-family: "Roboto Mono";
+}
+
+#title h1 {
+  text-align: center;
+  font-size: 3em;
+  color: white;
+}
+
+#scoreboards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-top: 5em;
+}
+
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+
+.score-title {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 2em;
+  color: whitesmoke;
+}
+
+.score-container {
+  background: black;
+  padding: 2em 3em;
+  color: white;
+  min-width: 15vw;
+  border-radius: 5%;
+}
+
+.score {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 3em;
+  font-family: Oxanium;
+}
+
+.btns-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.btn {
+  font-size: 1.5em;
+  padding: 0.8em;
+  border-radius: 10%;
+  background: gainsboro;
+}
+
+.btn:hover,
+#start-btn:hover,
+#end-btn:hover,
+#new-btn:hover {
+  cursor: pointer;
+  transform: translateY(-20%);
+  transition: ease-in-out 0.3s;
+}
+
+#start-end-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+  gap: 1.2em;
+}
+
+#start-btn,
+#end-btn,
+#new-btn {
+  padding: 1em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.3em;
+  border-radius: 5%;
+}
+
+#winner-banner {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  padding: 2em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@media only screen and (max-height: 800px) {
+  .scoreboard {
+    gap: 1.5em;
+  }
+
+  #scoreboards-container {
+    margin-top: 2.5em;
+  }
+
+  #winner-banner {
+    padding: 1em;
+  }
+}
