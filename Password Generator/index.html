@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:wght@500&family=Charis+SIL&family=Creepster&family=Hind:wght@600&family=Inter:wght@400;600&family=Orbitron:wght@600;800&family=Oxanium:wght@600&family=Poppins:wght@500;600&family=Roboto+Mono:wght@500&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="foreword">
+        <h2>
+          <span class="first-part"> Generate a </span>
+          <span class="green-letters">random password</span>
+        </h2>
+        <h4>Never use an insecure password again!</h4>
+      </div>
+      <div id="options-section">
+        <div class="option">
+          <label for="password-length" class="option-question"
+            >Set the length of the password (minimum 5): </label>
+          <input type="number" name="password-length" min="5" id="password-length-el"/>
+        </div>
+        <div class="option">
+          <input type="checkbox" name="numbers-option" class="checkbox" id="include-numbers-input-el"/> 
+          <label for="include-numbers-input-el"  class="option-question">Include numbers in the password</label>
+        </div>  
+        <div class="option">
+          <input type="checkbox" name="symbols-option" class="checkbox" id="include-symbols-input-el"/>
+          <label for="include-symbols-input-el" class="option-question">Include symbols in the password</label>
+        </div>
+      </div>
+      <button id="generate-btn">Generate passwords</button>
+      <div id="transparent-line"></div>
+      <div id="passwords-container">
+        <div id="first-password" class="password">
+          <h4 class="green-letters password-el text-to-copy"></h4>
+        </div>
+        <div id="second-password" class="password" >
+          <h4 class="green-letters password-el text-to-copy"></h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

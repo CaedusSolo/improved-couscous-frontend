@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1c1c1c;
+  font-family: "Poppins";
+}
+
+.container {
+  background-color: #1f2937;
+  height: 85vh;
+  width: 80vw;
+  margin-top: 7.5vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3%;
+  padding: 3em 2em;
+}
+
+#foreword {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+
+.first-part {
+    color: white;
+}
+
+.first-part::after {
+  content: "\A";
+  white-space: pre;
+}
+
+.green-letters {
+  color: #12ca89;
+}
+
+#foreword h4 {
+    color: gainsboro;
+    margin: 0.3em 0;
+}
+
+#generate-btn {
+    background: #12cb89;
+    border: 0;
+    color: white;
+    padding: 1em;
+    border-radius: 3%;
+    font-size: 1.15em;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+#transparent-line {
+    background: #273549;
+    width: 100%;
+    height: 5px;
+    margin-bottom: 2em;
+}
+
+#passwords-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2em;
+} 
+
+.password {
+    background: #273549;
+    min-width: 10em;
+    min-height: 3em;
+    word-wrap: break-word;
+}
+
+.password h4 {
+  text-align: center;
+  padding: 0.5em 1em;
+}
+
+#generate-btn {
+  border: 2px solid #12cb89;
+}
+
+#generate-btn:hover {
+  cursor: pointer;
+  background: transparent;
+  transition: 0.4s ease-in-out;
+}
+
+#options-section {
+  margin-top: 1em;
+}
+
+.option label {
+  color: whitesmoke;
+  font-size: 1.1em;
+}
+
+.option-question:nth-child(2):hover,.option-question:nth-child(3):hover {
+  cursor: pointer;
+}
+
+input[name = "password-length"] {
+  margin-left: 0;
+  padding: 0.1em 0.2em;
+}
+
+input[type = "checkbox"] {
+  padding: 0.1em 0.2em;
+}
+
+input[type = "checkbox"]:hover {
+  cursor: pointer;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3em;
+}
+
+.hover {
+  cursor: pointer;
+} 
+
+@media screen and (min-width: 1400px) {
+  #foreword {
+    font-size: 1.9em;
+  } 
+
+  #options-section {
+    font-size: 1.2em;
+    margin: 3em 0;
+  } 
+
+  #generate-btn {
+    font-size: 1.2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .password {
+    font-size: 1.1em;
+  } 
+}
+
+@media screen and (min-height: 900px) {
+  #foreword {
+    font-size: 1.6em;
+  } 
+
+  #generate-btn {
+    margin: 2em 0
+  }
+
+  #options-section {
+    margin: 1.5em 0;
+    font-size: 1.2em;
+  }
+
+  #transparent-line {
+    margin-top: 2em;
+    margin-bottom: 3em;
+  }
+}
