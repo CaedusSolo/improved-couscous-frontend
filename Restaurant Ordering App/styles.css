@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ink Free", sans-serif;
+  user-select: none;
+}
+
+.header {
+  background-image: url('./img/header-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 2em;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin-top: 1em;
+}
+
+.header p {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+body {
+  max-width: 600px;
+  margin: 0 auto 1em auto;
+  position: relative;
+}
+
+.menu-section {
+  background-color: white;
+}
+
+.menu-item-emoji {
+  font-size: 3em;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2.5em;
+  margin: 1em;
+  border-bottom: 0.5px solid grey;
+  padding: 1em;
+}
+
+.fa-plus {
+  margin-left: 45%;
+  cursor: pointer;
+}
+
+.fa-plus:hover {
+  transform: translateY(-500%);
+  transition: 0.4s ease-in-out;
+  font-size: 1.7em;
+}
+
+.menu-item::after:hover {
+  background-color: black;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.order-list-section {
+ display: none; 
+}
+
+.order-list-section.active {
+  display: block;
+}
+
+.ordered-item,
+.total-price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6em 1em;
+}
+
+.ordered-item-name,
+.ordered-item-price
+ {
+  display: inline-block;
+}
+
+.fa-trash {
+  color: red;
+  cursor: pointer;
+  margin-left: -30vw;
+}
+
+.total-price-container {
+  display: none;
+}
+
+.total-price-container.active {
+  border-top: 1.5px solid black;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.complete-order-btn,
+.pay-btn {
+  margin: 0.5em auto;
+  display: block;
+  width: 100%;
+  padding: 0.8em;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: whitesmoke;
+  background-color: #16DB99;
+  border: 0;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.payment-modal {
+  position: absolute;
+  left: 20%;
+  top: 65%;
+  background-color: whitesmoke;
+  width: 60%;
+  padding: 2em;
+  display: none;
+}
+
+.payment-modal.active {
+  display: block;
+}
+
+#payment-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+
+#payment-form input {
+  font-size: 1.3em;
+  padding: 0.3em;
+}
+
+.pay-btn {
+  margin-top: 1.5em;
+}
+
