@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: Poppins, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  min-width: 95vw;
+}
+
+.fa-book-journal-whills {
+  font-size: 2rem;
+}
+
+nav {
+  background-color: white;
+  padding: 1em;
+  font-family: Josefin Sans, sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.first-nav,
+.second-nav {
+  display: flex;
+  align-items: center;
+}
+
+.first-nav {
+  gap: 1em;
+  padding-left: 0.2em;
+}
+
+.second-nav {
+  gap: 2em;
+  padding-right: 0.2em;
+}
+
+.nav-link {
+  display: inline-block;
+}
+
+.nav-link a {
+  color: black;
+  text-decoration: none;
+}
+
+.intro {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr 1fr;
+  grid-template-areas:
+    ". . ."
+    "date . ."
+    "title title ."
+    "details details .";
+  background-image: url(./img/blog-image-hero.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+  max-height: 65vh;
+  max-width: 100vw;
+  position: relative;
+}
+
+.intro-date,
+.new-journey,
+.journey-details {
+  position: absolute;
+  color: white;
+  left: 5%;
+}
+
+.intro-date {
+  top: 35%;
+  font-size: 1rem;
+  grid-area: "date";
+}
+
+.new-journey {
+  top: 45%;
+  font-size: 1.5rem;
+  grid-area: "title";
+}
+
+.new-journey:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 0.5s ease-in-out;
+  transform: translateY(-20%);
+}
+
+.new-journey a {
+  text-decoration: none;
+  color: white;
+}
+
+.journey-details {
+  top: 58%;
+  max-width: 90%;
+  grid-area: "details";
+}
+
+.blogs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.blog {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 1.5em;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr 1em;
+  grid-template-areas:
+    ". . ."
+    "image image image"
+    "blog-date . ."
+    "title title ."
+    "text text "
+    ". . .";
+}
+
+.blog-img {
+  justify-self: center;
+  align-self: baseline;
+  grid-area: "image";
+  width: 100%;
+  height: 100%;
+}
+
+.blog-title,
+.blog-date,
+.blog-text {
+  justify-self: start;
+  align-self: center;
+  margin-top: 0.5em;
+  margin-left: 0;
+}
+
+.blog-img,
+.blog-title,
+.blog-date,
+.blog-text {
+  max-width: 500px;
+}
+
+.blog-date {
+  grid-area: "blog-date";
+}
+
+.blog-title {
+  grid-area: "title";
+}
+
+.blog-text {
+  grid-area: "text";
+}
+
+.main-article {
+  background-color: white;
+  min-height: 100vh;
+  margin: 0 auto 2em auto;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
+.article-date {
+  padding: 1em 0 0 1em;
+}
+
+.main-article .article-title {
+  font-size: 2rem;
+  padding: 0.5em;
+}
+
+.main-article .article-text {
+  padding-left: 1em;
+}
+
+.article-image {
+  display: block;
+  margin: 0 auto;
+  min-width: 30vw;
+  max-width: 100vw;
+  padding: 1.5em 2.5em 1.5em 2em;
+}
+
+.article-subtitle {
+  padding: 1em;
+}
+
+.article-subtitle.middle-text {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.main-article a {
+  color: inherit;
+}
+
+.about-me {
+  background-color: white;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.about-me .round-img {
+  border-radius: 100%;
+  display: block;
+  margin: 0 auto;
+  max-height: 300px;
+}
+
+.about-me .article-title {
+  font-size: 1.6em;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.about-me .main-article {
+  margin-bottom: 1em;
+}
+
+.footer {
+  text-align: center;
+  padding: 1.5em;
+  background-color: #222;
+  color: white;
+  margin-top: 2em;
+}
+
+@media only screen and (min-width: 600px) {
+  .intro {
+    height: 25vh;
+    background-position: center 35%;
+  }
+  .blogs {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em 1em;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .blog-img,
+  .blog-title,
+  .blog-date,
+  .blog-text {
+    max-width: 400px;
+  }
+
+  .about-me.article {
+    background-color: wheat;
+  }
+}
