@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  padding: 2em;
+  margin: auto;
+  height: 100vh;
+  background: linear-gradient(to top, grey, #bdc3c7);
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.activity-h4 {
+  font-size: 1.5rem;
+}
+
+.get-btn {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1.5em;
+  border-radius: 50%;
+  background-color: red;
+  border: 1px solid red;
+  cursor: pointer;
+  color: ghostwhite;
+  font-weight: 600;
+  width: 150px;
+  height: 150px;
+}
+
+.get-btn:hover {
+  transform: translateY(-10%);
+  transition: 1s ease-in-out;
+}
