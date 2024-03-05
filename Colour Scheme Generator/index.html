@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon_io/site.webmanifest" />
+    <script src="script.js" defer></script>
+    <title>Colour Scheme Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="options">
+        <input
+          type="color"
+          name="colour"
+          id="colour-selector"
+          value="#5A189A"
+        />
+        <select name="Mode Selection" id="mode-selection">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+        <button class="get-btn" id="get-btn">Get colour scheme</button>
+      </div>
+      <div class="colours">
+        <div class="colour">
+          <div class="colour-display" id="colour-1"></div>
+          <h4 class="hex-code">#5A189A</h4>
+        </div>
+        <div class="colour">
+          <div class="colour-display" id="colour-2"></div>
+          <h4 class="hex-code">#7B2CBF</h4>
+        </div>
+        <div class="colour">
+          <div class="colour-display" id="colour-3"></div>
+          <h4 class="hex-code">#9E4EDD</h4>
+        </div>
+        <div class="colour">
+          <div class="colour-display" id="colour-4"></div>
+          <h4 class="hex-code">#C77DFF</h4>
+        </div>
+        <div class="colour">
+          <div class="colour-display" id="colour-5"></div>
+          <h4 class="hex-code">#E0AAFF</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
